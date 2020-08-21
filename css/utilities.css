@@ -1,0 +1,39 @@
+.grid{
+    display: grid;
+}
+.flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+.btn{
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+.btn-primary{
+    background: cyan;
+    color: rgb(24, 23, 23);
+}
+
+.btn-primary:hover{
+    background: transparent;
+    border-color: cyan;
+    color: cyan;
+}
+
+.flex-1{
+    flex: 1;
+}
