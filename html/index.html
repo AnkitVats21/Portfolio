@@ -15,9 +15,6 @@
             <div class="container">
             <nav class="flex items-center justify-between">
                 <div class="left flex items-center">
-                    <div class="logo">
-                        <img src="../images/title logo.jpg" alt="logo">
-                    </div>
                     <div>
                         <a href="#">Home</a>
                         <a href="#about">About</a>
@@ -28,20 +25,23 @@
                     <button class="btn btn-primary">Contact</button>
                 </div>
             </nav>
-            <div class="image flex items-center">
+            <div class="image flex items-center justify-between">
                 
-                <div class="left">
+                <div class="left flex-1">
                     <h1>Hi there,<br>
                         I'm <span>Ankit Mishra</span>.
                     </h1>
                     <p>Go through the page to catch more about me.<p>
                 </div>
-                <div class="right">
-                    <img src="..//images/ankit2.jpeg" alt="my image">
+                <div class="right flex-1 flex justify-center">
+                    <img src="..//images/ankit2.jpeg" alt="my image" width="400px" height="400px">
                 </div>
             </div>
             </div>
         </header>
+
+<!--header completed-->
+
         <section class="about">
             <div class="container flex items-center">
                 <div class="flex-1">
@@ -71,13 +71,36 @@
                 </p>
                 <a href="https://github.com/AnkitVats21/web-dev">code</a>
         </section>
+
         <section class="contact">
-            <div>
-            <a href="#"><img src="..//images/instagram-logo.png" alt=""></a>
-            <a href="#"><img src="..//images/facebook.png" alt=""></a>
-            <a href="#"><img src="..//images/github.png" alt=""></a>
-            <a href="#"><img src="..//images/twitter.png" alt=""></a>
+            <div class="containers">
+                <h1 class="section-heading">Contact <span>Info</span></h1>
+                <p>You can contact me through following channels</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="..//images/contact.png" alt="github" width="100px" height="100px">
+                        <h2>Phone</h2>
+                        <p>+91 7607047039</p>
+                        <p>+91 6388579322</p>
+                    </div>
+                    <div class="card">
+                        <img src="..//images/mail.png" alt="github" width="100px" height="100px">
+                        <h2>Email</h2>
+                        <p>akmmfkh536@gmail.com</p>
+                        <p>ankit1911006@akgec.ac.in</p>
+                    </div>
+                    <div class="card">
+                        <img src="..//images/address.png" alt="github" width="100px" height="100px">
+                        <h2>Address</h2>
+                        <p>Amethi</p>
+                        <p>Uttar Pradesh</p>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <footer>
+            <p>&#169; AnkitMishra</p>
+        </footer>
     </body>
 </html>

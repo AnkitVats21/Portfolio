@@ -1,4 +1,14 @@
 @import 'utilities.css';
+
+:root{
+    --primary:#3dcfd3;
+    --dark:#161616;
+    --pure:#ffffff;
+    --ternary:#898989;
+    --light:#f2f2f2;
+    --secondary:#070606;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -16,7 +26,13 @@ header{
     
 }
 .container{
-    max-width: 1080px;
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.containers{
+    max-width: 1152px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -45,15 +61,6 @@ header nav .logo{
     margin-right: 3rem;
 }
 
-.image .right img{
-    width: 400px;
-    border: 3px solid rgb(44, 44, 44);
-    border-radius: 50%;
-    margin-left: 70%;
-    margin-bottom: 5rem;
-}
-
-
 .image .left{
     color: floralwhite;
     font-weight: 100;
@@ -61,6 +68,12 @@ header nav .logo{
 
 .image .left span{
     color: cyan;
+}
+
+.image .right img{
+    width: 400px;
+    border-radius: 50%;
+    margin: 4rem 0;
 }
 
 section{
@@ -121,6 +134,7 @@ section.about .social a img{
 
 section.project{
     text-align: center;
+    margin-bottom: -6rem;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(..//images/black-abstract-background-design.jpg);
     clip-path: polygon(0 0,20% 15%, 100% 0, 100% 100%, 80% 85%, 0 100%);
 }
@@ -159,9 +173,79 @@ section.project a:hover{
     background-color: transparent;
 }
 
-section.contact a{
-    image-orientation: flip;
-    border: 2px solid black;
-    padding: 20px;
-    border-radius: 25%;
+.section-heading{
+    margin-top: 5rem;
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 0.5;
+}
+
+.section-heading + p{
+    color: var(--ternary);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.section-heading span{
+    color: var(--primary);
+}
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-column-gap: 2rem;
+}
+
+section.contact{
+    background: var(--light);
+}
+
+section.contact .card-wrapper .card{
+    background: var(--pure);
+    padding: 2rem 3rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+section.contact .card-wrapper .card img{
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.contact .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.contact .card-wrapper .card p{
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+
+section.contact .card-wrapper .card:hover{
+    background: var(--dark);
+    box-shadow: 8px 8px 5px var(--dark);
+
+}
+
+section.contact .card-wrapper .card:hover h2,section.contact .card-wrapper .card:hover p{
+    color: var(--pure);
+}
+
+footer{
+    background: linear-gradient(rgb(27, 5, 5),rgb(192, 190, 190));
+}
+
+footer p{
+    color: var(--pure);
+    padding: 1rem;
+    text-align: center;
 }
