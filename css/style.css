@@ -21,7 +21,7 @@ body{
     text-decoration: none;
 }
 header{
-    background-color: rgb(15, 14, 14);
+    background: url(https://bashooka.com/wp-content/uploads/2018/04/scg-canvas-background-animation-22.jpg);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 90%, 0 100%);
     
 }
@@ -41,6 +41,7 @@ header nav .left a{
     color: white;
     text-decoration: none;
     margin-right: 2rem;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
@@ -82,12 +83,17 @@ section{
 
 section.about .about-me-img{
     height: 350px;
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
 }
 
 section.about h1{
     margin-bottom: 1rem;
     font-size: 1.6rem;
     font-weight: 400;
+    text-align: center;
 }
 
 section.about h1 span{
@@ -135,7 +141,7 @@ section.about .social a img{
 section.project{
     text-align: center;
     margin-bottom: -6rem;
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(..//images/black-abstract-background-design.jpg);
+    background: linear-gradient(rgba(173, 173, 173, 0.178),rgba(41, 40, 40, 0.24)),url(..//images/background.jpg);
     clip-path: polygon(0 0,20% 15%, 100% 0, 100% 100%, 80% 85%, 0 100%);
 }
 
@@ -193,9 +199,9 @@ section.project a:hover{
 }
 
 section.contact .card-wrapper{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    grid-column-gap: 2rem;
+  display: grid;
+  grid-auto-rows: minmax(125px, auto);
+  grid-gap: 5rem;
 }
 
 section.contact{
@@ -240,12 +246,61 @@ section.contact .card-wrapper .card:hover h2,section.contact .card-wrapper .card
     color: var(--pure);
 }
 
-footer{
-    background: linear-gradient(rgb(27, 5, 5),rgb(192, 190, 190));
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background:linear-gradient(rgba(17, 17, 17, 0.623),rgba(179, 172, 172, 0.521)),url(..//images/background.jpg);
+  }
+
+footer li{
+    display: grid;
+    grid-template-columns: 9f 1fr;
+}
+footer li a,footer li p {
+    color: white;
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+  }
+footer p{
+    margin-top: 10px;
+    margin-bottom: -8px;
 }
 
-footer p{
-    color: var(--pure);
-    padding: 1rem;
-    text-align: center;
+footer a{
+    margin-top:-25px;
+}
+
+@media screen and (max-width:740px){
+    #ai{
+        display: none;
+    }
+    #image{
+        padding-bottom:12vh;
+    }
+    header{
+        background: linear-gradient(rgba(87, 87, 87, 0.534),rgba(104, 104, 104, 0.418)),url(..//images/ankit2.jpeg);
+        background-size: cover;
+    }
+    
+    #aboutdiv img{
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+    }
+    
+}
+
+@media screen and (min-width:826px){
+    section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-column-gap: 2rem;
+}
+#aboutdiv{
+        display:flex;
+        align-items: center;
+    }
 }

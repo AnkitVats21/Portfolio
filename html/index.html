@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <header>
+        <header id="head">
             <div class="container">
             <nav class="flex items-center justify-between">
                 <div class="left flex items-center">
@@ -22,10 +22,10 @@
                     </div>
                 </div>
                 <div class="right">
-                    <button class="btn btn-primary">Contact</button>
+                    <a class="btn btn-primary" href="#contact">contact</a>
                 </div>
             </nav>
-            <div class="image flex items-center justify-between">
+            <div id="image" class="image flex items-center justify-between">
                 
                 <div class="left flex-1">
                     <h1>Hi there,<br>
@@ -34,7 +34,7 @@
                     <p>Go through the page to catch more about me.<p>
                 </div>
                 <div class="right flex-1 flex justify-center">
-                    <img src="..//images/ankit2.jpeg" alt="my image" width="400px" height="400px">
+                    <img id="ai" src="..//images/ankit2.jpeg" alt="my image" width="400px" height="400px">
                 </div>
             </div>
             </div>
@@ -42,8 +42,8 @@
 
 <!--header completed-->
 
-        <section class="about">
-            <div class="container flex items-center">
+        <section id="about" class="about">
+            <div id="aboutdiv" class="container">
                 <div class="flex-1">
                     <img class="about-me-img" src="..//images/ankit.jpeg" alt="aboutimage">
                 </div>
@@ -63,19 +63,21 @@
                 </div>
             </div>
         </section>
-
+        
+        <div id="project">
         <section class="project">
                 <h1><span>My </span>Project</h1>
-                <p>I have made a project on python language during my summer break. <br>
-                    It was a quiz app, in which i get the question from API (opentdb.com).
+                <p>I made a project using python during my summer break. <br>
+                    It was a great experience for me while making this project as it helped me <br>
+                    alot in learning python and making quiz app.
                 </p>
-                <a href="https://github.com/AnkitVats21/web-dev">code</a>
+                <a href="https://github.com/AnkitVats21/Python-Project">Have a look</a>
         </section>
-
-        <section class="contact">
+        </div>
+        <section id="contact" class="contact">
             <div class="containers">
                 <h1 class="section-heading">Contact <span>Info</span></h1>
-                <p>You can contact me through following channels</p>
+                <p>Contact me through following channels</p>
                 <div class="card-wrapper">
                     <div class="card">
                         <img src="..//images/contact.png" alt="github" width="100px" height="100px">
@@ -100,7 +102,10 @@
         </section>
 
         <footer>
-            <p>&#169; AnkitMishra</p>
+            <ul>
+                <li><p>&copy; Ankit Mishra</p></li>
+                <li style="float: right;"><a href="#head"><img src="..//images/top.png" alt="back to top"></a></li>
+            </ul>
         </footer>
     </body>
 </html>
