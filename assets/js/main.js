@@ -183,7 +183,7 @@ function educationData() {
       major: "Computer Science",
       date: "2019 - Present",
       description: "Completed my Bachelor of Technology in Computer Science with a major in Software Engineering.",
-      grade: "CGPA: 8.5"
+      grade: "CGPA: 7.8"
     },
     {
       id: 2,
